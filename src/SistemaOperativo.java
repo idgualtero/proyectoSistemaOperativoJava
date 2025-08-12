@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class SistemaOperativo {
     private Carpeta carpeta1 = new Carpeta("Carpeta1");
     private Carpeta carpeta2 = new Carpeta("Carpeta2");
