@@ -8,8 +8,8 @@ public class Carpeta extends ElementoSistema{
     /*public Carpeta (){
     }*/
 
-    public Carpeta (String nombre){
-        super(nombre);
+    public Carpeta (String nombre, int tamano){
+        super(nombre, tamano);
 
     }
     

@@ -5,10 +5,10 @@ public abstract class ElementoSistema {
     private String nombre;
     private int tamano;
 
-    public ElementoSistema(String nombre) {
+    /*public ElementoSistema(String nombre) {
         super();
         this.nombre = nombre;
-    }
+    }*/
 
     public ElementoSistema(String nombre, int tamano) {
         super();

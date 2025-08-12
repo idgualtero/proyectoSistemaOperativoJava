@@ -1,7 +1,7 @@
 public class SistemaOperativo {
-    private Carpeta carpeta1 = new Carpeta("Carpeta1");
-    private Carpeta carpeta2 = new Carpeta("Carpeta2");
-    private Carpeta carpeta3 = new Carpeta("Carpeta3");
+    private Carpeta carpeta1 = new Carpeta("Carpeta1",0);
+    private Carpeta carpeta2 = new Carpeta("Carpeta2",0);
+    private Carpeta carpeta3 = new Carpeta("Carpeta3",0);
     private int tamanoTotal = 0;
 
     public void load (){
@@ -10,7 +10,7 @@ public class SistemaOperativo {
         carpeta1.agregarElemento(new Archivo("Archivo2.txt",10));
         carpeta1.agregarElemento(new Archivo("Archivo3.txt",5));
         carpeta1.agregarElemento(new Archivo("Archivo4.txt",25));
-        carpeta1.agregarElemento(new Carpeta("Carp1"));
+        carpeta1.agregarElemento(new Carpeta("Carp1",0));
        
 
         carpeta2.agregarElemento(new Archivo("Arch1.txt",5));
@@ -45,20 +45,20 @@ public class SistemaOperativo {
 
     public void tamanoTotal(ElementoSistema elementoSistema){
         tamanoTotal += elementoSistema.getTamano();        
-            if(elementoSistema.esDirectorio()) {
+            //if(elementoSistema.esDirectorio()) {
                 for (ElementoSistema f:elementoSistema.getFicheros()) {                     
                     tamanoTotal(f);
                 }
-            }
+            //}
     }
 
     public void pintarArbol(ElementoSistema elementoSistema){
         System.out.println(elementoSistema.getNombre());
-            if(elementoSistema.esDirectorio()) {
+            //if(elementoSistema.esDirectorio()) {
                 for (ElementoSistema f:elementoSistema.getFicheros()) {                     
                     pintarArbol(f);
                 }
-            }
+            //}
     }
 
 

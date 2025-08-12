@@ -1,7 +1,9 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Archivo extends ElementoSistema{
     
+    private List <ElementoSistema> elementos  = new ArrayList<ElementoSistema>();
 
     public Archivo (String nombre,int tamano){
         super(nombre, tamano);
@@ -13,8 +15,7 @@ public class Archivo extends ElementoSistema{
     }
 
     @Override
-    public List<ElementoSistema> getFicheros() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getFicheros'");
+     public List<ElementoSistema> getFicheros() {
+        return this.elementos;
     }
 }
