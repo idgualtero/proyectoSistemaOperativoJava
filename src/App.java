@@ -3,8 +3,6 @@ public class App {
         System.out.println("Hello, World!");
         SistemaOperativo so = new SistemaOperativo();
         so.load();
-        so.tamanoTotal();
-        so.pintarArbol();
         
     }
 }
